@@ -13,7 +13,7 @@
           <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-       <header class="container">
+       <!-- <header class="container">
           <nav class="flex header">
            <div class="logo flex">
             <img src="Images/Group 40071 (2).png" alt="Logo"><h2>Samir <span>Travel</span></h2>       
@@ -26,18 +26,19 @@
                     <li><a href="#">Contact</a></li>
              </ul>
           </nav>
-       </header>
+       </header> -->
 
        <main>
+
           <section class="hero container">
           <div class="black-shadow">         
            <div class="hero-content">
              <h1 class="font-weight-800">Explore Your Travel</h1>
              <p class="font-weight-400 font-size-0 line-height-1 paragraph-width">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
              <form>
-              <input type="text" name="place" placeholder="Where to go">
+              <input type="text" name="place" placeholder="Where to go" required>
               <div class="select">
-                        <select id="whenToGo" name="time">
+                        <select id="whenToGo" name="time" required>
                          <option value="" selected disabled hidden>When</option>
                          <option value="Morning">Morning</option>
                          <option value="Evening">Evening</option>
@@ -47,7 +48,7 @@
 
               </div>
               <div class="select">
-                        <select id="HowToGo" name="type">
+                        <select id="HowToGo" name="type" required>
                          <option value="" selected disabled hidden>Select Type</option>
                          <option value="Business">Business</option>
                          <option value="Economic">Economic</option>
@@ -88,35 +89,35 @@
 
                     <div class="destination-collage-1">
                          <div class="destination-img">
-                             <img src="Images/Rectangle 5.png" alt="">
+                             <img src="Images/Rectangle 5.png" alt="Maldives">
                              <h3 class="text-white font-weight-800">Maldives</h3> 
                          </div>     
                          <div class="destination-img">
-                              <img src="Images/Rectangle 8.png" alt="">
+                              <img src="Images/Rectangle 8.png" alt="Indonesia">
                               <h3 class="text-white font-weight-800">Indonesia</h3>
                          </div>     
                     </div>
                     <div class="destination-collage-2">
                         <div class="destination-img">
-                             <img src="Images/Rectangle 6.png" alt="">
+                             <img src="Images/Rectangle 6.png" alt="Srilanka">
                              <h3 class="text-white font-weight-800">Srilanka</h3> 
                         </div>
                         <div class="destination-img">
-                             <img src="Images/Rectangle 7.png" alt="">
+                             <img src="Images/Rectangle 7.png" alt="North America">
                              <h3 class="text-white font-weight-800">North America</h3> 
                         </div>
                         <div class="destination-img">
-                             <img src="Images/Rectangle 9.png" alt="">
+                             <img src="Images/Rectangle 9.png" alt="Kashmir">
                              <h3 class="text-white font-weight-800">Kashmir</h3> 
                         </div>
                     </div>
                     <div class="destination-collage-3">
                       <div class="destination-img">
-                             <img src="Images/Rectangle 11.png" alt="">
+                             <img src="Images/Rectangle 11.png" alt="Bangladesh">
                              <h3 class="text-white font-weight-800">Bangladesh</h3> 
                         </div>
                         <div class="destination-img">
-                             <img src="Images/Rectangle 10.png" alt="">
+                             <img src="Images/Rectangle 10.png" alt="Bandarban">
                              <h3 class="text-white font-weight-800">Bandarban</h3> 
                         </div>        
                     </div>
@@ -126,9 +127,65 @@
               <div class="why-us-header">
                     <h2 class="text-black font-weight-800 font-size-2">Why Choose Us</h2>
                     <p class="font-size-0 font-weight-400 text-paragraph line-height-1 paragraph-width">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+              </div>
+              <div class="why-us-body flex">
+                    <div class="content-1 hover-effect">
+                      <img src="svg/hotel 1.svg" alt="Hotel">
+                      <h3>Handpicked Hotels</h3> 
+                       <p class="text-gray line-height-1">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>        
+                    </div>
+                    <div class="content-2 hover-effect">
+                       <img src="svg/map 1.svg" alt="Map">
+                       <h3>World Class Service</h3>
+                       <p class="text-gray line-height-1">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>       
+                    </div>
+              </div>
+              <div class="why-us-body">
+                 <div class="content-3 hover-effect">
+                           <img src="svg/price-tag 1.svg" alt="Map">
+                                 <h3>Best Price Guarantee</h3>
+                                 <p class="text-gray line-height-1">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                 </div>   
               </div>      
           </section>
+
+          <section class="newsletter container flex">
+                    <div class="main-newsletter">
+                       <h3 class="font-weight-800 font-size-1 text-black">Newsletter</h3>
+                       <p class="line-height-1 font-weight-400 font-size-0 text-gray">Get your daily dose of travel news & tips. Sign up today!</p>
+                       <hr>
+                       <form>
+                          <input type="text" name="name" placeholder="Enter Your Name" required>    
+                          <input type="email" name="email" placeholder="Enter Your Email" required>
+                          <button class="primary-btn newsletter-btn font-weight-800" type="submit">Subscribe</button>    
+                       </form>       
+                    </div>
+                    <div class="newsletter-img">
+                       <img src="Images/Rectangle 8 (1).png" alt="Mountain">
+                       <div class="discount text-white font-size-1 font-weight-400">
+                              Travel.com <br>
+                              <span class="font-weight-800">Save up to 70%</span>
+                       </div>       
+                    </div>
+          </section>
        </main>
-       <footer></footer>
+       <footer>
+          <div class="footer-content">
+                    <div class="footer-header flex">
+                              <img src="Images/Group 40071 (2).png" alt="Samir Travel">
+                              <h2>Samir <span>Travel</span></h2>
+                    </div>
+                    <p class="font-size-0 font-weight-400 text-paragraph line-height-1 paragraph-width">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                    <div class="social-icons">
+                              <a href=""><i class="fa-brands fa-x-twitter"></i></a><a href=""><i class="fa-brands fa-facebook-f"></i></a><a href=""><i class="fa-brands fa-instagram"></i></a><a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <hr class="footer-hr">
+                    <p id="footer-p"></p>
+          </div>
+       </footer>
+       <script>
+          let currentYear = new Date().getFullYear();
+          document.getElementById('footer-p').innerHTML = currentYear + ", All Rights Reserved."
+       </script>
 </body>
 </html>
