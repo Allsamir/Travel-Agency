@@ -18,6 +18,9 @@
 
 body {
   font-family: "Mulish", sans-serif;
+}
+
+main {
   padding: 0 1rem;
 }
 
@@ -352,7 +355,7 @@ select::placeholder {
 footer {
   background: rgba(19, 19, 24, 0.05);
   margin: 6.25rem 0 0;
-  padding: 6.87rem 0;
+  padding: 6.87rem 1rem;
 }
 
 .footer-content {
@@ -375,9 +378,34 @@ footer {
   margin: 3.12rem auto;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 3rem;
+  background-color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar li a {
+  width: 100%;
+}
+
 /* Media Qureys */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .hero-content {
     padding: 2rem 1rem;
   }
@@ -388,12 +416,27 @@ footer {
     font-size: 0.875rem;
   }
   .hero-content form {
+    width: 90%;
     flex-direction: column;
   }
-  .text h2 {
+  .hero-content form select,
+  input {
+    width: 100%;
+  }
+  .select {
+    width: 100%;
+  }
+  .hero-content form button {
+    width: 100%;
+  }
+  .text h2,
+  .destination-header h2,
+  .why-us-header h2 {
     font-size: 1.25rem;
   }
-  .text p {
+  .text p,
+  .destination-header p,
+  .why-us-header p {
     font-size: 0.875rem;
   }
   .popular-content {
@@ -404,5 +447,40 @@ footer {
   }
   .popular-content ul li {
     font-size: 0.875rem;
+  }
+  .img img {
+    width: 100%;
+  }
+  .destination-collage-1,
+  .destination-collage-2,
+  .destination-collage-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-img img {
+    width: 20rem !important;
+    height: 11rem;
+  }
+  .destination-img h3 {
+    font-size: 1.25rem;
+  }
+
+  .why-us-body {
+    flex-direction: column;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .discount {
+    bottom: 3.2rem;
+  }
+
+  .footer-hr {
+    max-width: 20rem;
+  }
+  .header ul {
+    display: none;
   }
 }
