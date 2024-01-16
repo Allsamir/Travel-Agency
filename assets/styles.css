@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap");
+
+:root {
+  --headings-color: #131318;
+  --paragraph-color: rgba(19, 19, 24, 0.7);
+  --second-p-color: #5a5a5d;
+  --nav-text-color: #424247;
+  --btn-color: #ff5400;
+  --color-white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Mulish", sans-serif;
+}
+
+/* Common Css */
+
+.container {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+.paragraph-width {
+  padding: 1.5rem 0 3rem;
+  max-width: 43rem;
+  margin: 0 auto;
+}
+.text-black {
+  color: var(--headings-color);
+}
+.text-paragraph {
+  color: var(--paragraph-color);
+}
+.text-white {
+  color: var(--color-white);
+}
+.primary-btn {
+  padding: 0.87rem 2rem;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Mulish", sans-serif;
+  color: var(--color-white);
+}
+.font-size-0 {
+  font-size: 1rem;
+}
+.font-size-1 {
+  font-size: 1.25rem;
+}
+.font-size-2 {
+  font-size: 2.5rem;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-800 {
+  font-weight: 800;
+}
+.line-height-1 {
+  line-height: 1.625rem;
+}
+.flex {
+  display: flex;
+}
+
+/* Header */
+
+.header {
+  justify-content: space-between;
+  margin: 3.5rem 0;
+}
+
+.logo {
+  align-items: center;
+  gap: 1.04rem;
+}
+
+.logo h2 {
+  display: inline-block;
+}
+
+.logo h2 span {
+  color: var(--btn-color);
+}
+
+.nav-links {
+  padding: 0.625rem 0rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+
+.nav-links li a:hover {
+  color: var(--btn-color);
+}
+
+/* End of header section */
+
+.hero {
+  border-radius: 1rem;
+  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.black-shadow {
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+}
+
+.hero-content {
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.hero-content p {
+  color: #fff;
+}
+
+.hero-content form {
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  padding: 1rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.hero-content form select,
+input {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 11rem;
+  font-family: "Mulish", sans-serif;
+  color: rgba(19, 19, 24, 0.5);
+  appearance: none;
+}
+
+.hero-content form select {
+  width: calc(11rem - 2rem);
+}
+
+.hero-content form input,
+select::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(19, 19, 24, 0.5);
+}
+
+.hero-content form button {
+  padding: 1rem 1rem;
+  width: 11rem;
+}
+
+.select {
+  background-color: var(--color-white);
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.select i {
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 1.3rem;
+}
+/* End of hero css */
+.popular,
+.why-us {
+  margin: 6.5rem auto;
+}
+
+.popular-content {
+  gap: 3.31rem;
+}
+
+.text p {
+  padding: 1.5rem 0;
+}
+
+.text ul li {
+  padding: 0.6rem 0;
+}
+/* End of poplular css */
+
+.destination-header,
+.why-us-header {
+  text-align: center;
+}
+
+.destination-collage-1,
+.destination-collage-2,
+.destination-collage-3 {
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.destination-collage-1 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.destination-collage-2 {
+  grid-template-columns: 2fr 3fr 1fr;
+}
+
+.destination-collage-3 {
+  grid-template-columns: 1fr 3fr;
+}
+
+.destination-img {
+  position: relative;
+}
+
+.destination-img h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 1.75rem;
+}
+/* End of destination css */
