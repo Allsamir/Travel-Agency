@@ -18,20 +18,23 @@
            <div class="logo flex">
             <img src="Images/Group 40071 (2).png" alt="Logo"><h2>Samir <span>Travel</span></h2>       
            </div>
-           <ul class="flex nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Packages</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+           <ul class="flex nav-links">            
+                    <li class="hideNavbar"><a href="#">Home</a></li>
+                    <li class="hideNavbar"><a href="#">Packages</a></li>
+                    <li class="hideNavbar"><a href="#">Testimonial</a></li>
+                    <li class="hideNavbar"><a href="#">Blog</a></li>
+                    <li class="hideNavbar"><a href="#">Contact</a></li>
+                    <li class="hideMenu" onclick=showSlide()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
              </ul>
-           <!-- <ul class="flex nav-links sidebar">
+           <ul class="flex nav-links sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Packages</a></li>
                     <li><a href="#">Testimonial</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
-             </ul> -->
+                    <li><a href="#"></a></li>
+             </ul>
           </nav>
        </header>
 
@@ -192,7 +195,17 @@
        </footer>
        <script>
           let currentYear = new Date().getFullYear();
-          document.getElementById('footer-p').innerHTML = currentYear + ", All Rights Reserved."
+          document.getElementById('footer-p').innerHTML = currentYear + ", All Rights Reserved.";
+
+          function showSlide () {
+            const sideBar = document.querySelector(".sidebar");
+            sideBar.style.display = "flex";
+          }
+
+          function hideSidebar () {
+            const sideBar = document.querySelector(".sidebar");
+            sideBar.style.display = "none";
+          }
        </script>
 </body>
 </html>

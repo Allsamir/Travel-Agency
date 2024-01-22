@@ -81,7 +81,7 @@ main {
 
 .header {
   justify-content: space-between;
-  margin: 3.5rem 0;
+  margin: 3.5rem 1rem;
 }
 
 .logo,
@@ -389,10 +389,11 @@ footer {
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 2rem 2rem;
 }
 
 .sidebar li {
@@ -403,9 +404,16 @@ footer {
   width: 100%;
 }
 
+.hideMenu {
+  display: none;
+}
+
 /* Media Qureys */
 
 @media screen and (max-width: 992px) {
+  .hideMenu {
+    display: block;
+  }
   .hero-content {
     padding: 2rem 1rem;
   }
@@ -480,7 +488,7 @@ footer {
   .footer-hr {
     max-width: 20rem;
   }
-  .header ul {
+  .hideNavbar {
     display: none;
   }
 }
